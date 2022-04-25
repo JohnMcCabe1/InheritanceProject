@@ -17,7 +17,7 @@ public:
 	int Get_Year() const;
 	void Set_Manufacturer(string newManufacturer);
 	string Get_Manufacturer() const;
-	void Display_Info();
+	virtual void Display_Info() const;
 	
 };
 

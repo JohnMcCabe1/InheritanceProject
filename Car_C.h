@@ -10,10 +10,10 @@ private:
 	int doors;
 public:
 	Car_C();
-	Car_C(int newDoors);
+	Car_C(int newDoors, string newManufacturer, int newYear);
 	void Set_Doors(int);
 	int Get_Doors() const;
-	void Display_Info();
+	virtual void Display_Info() const;
 };
 
 

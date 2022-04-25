@@ -4,9 +4,9 @@
 
 using namespace std;
 
-void SUV_C::Display_Info() {
+void SUV_C::Display_Info() const {
 	Car_C::Display_Info();
-	cout << "Gas Tank Capacity: " << gasCapacity;
+	cout << "\n" << "Gas Tank Capacity: " << gasCapacity;
 }
 
 //															CONSTRUCTORS
@@ -15,8 +15,11 @@ SUV_C::SUV_C() {
 	gasCapacity = 0;
 }
 
-SUV_C::SUV_C(int newCapacity) {
+SUV_C::SUV_C(int newCapacity, string newManufacturer, int newYear, int newDoors) {
 	gasCapacity = newCapacity;
+	Set_Manufacturer(newManufacturer);
+	Set_Year(newYear);
+	Set_Doors(newDoors);
 }
 
 //														GETTERS AND SETTERS

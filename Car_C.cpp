@@ -5,9 +5,9 @@
 using namespace std;
 
 
-void Car_C::Display_Info() {
+void Car_C::Display_Info() const {
 	Vehicle_C::Display_Info();
-	cout << "Doors: " << doors;
+	cout << "\n" << "Doors: " << doors;
 }
 
 //															CONSTRUCTORS
@@ -16,8 +16,10 @@ Car_C::Car_C() {
 	doors = 0;
 }
 
-Car_C::Car_C(int newDoors) {
+Car_C::Car_C(int newDoors, string newManufacturer, int newYear) {
 	doors = newDoors;
+	Set_Manufacturer(newManufacturer);
+	Set_Year(newYear);
 }
 
 

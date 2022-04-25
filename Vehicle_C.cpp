@@ -4,9 +4,9 @@
 
 using namespace std;
 
-void Vehicle_C::Display_Info() {
-	cout << "Manufacturer: " << manufacturer;
-	cout << "Year: " << year;
+void Vehicle_C::Display_Info() const {
+	cout << "Vehicle Information: " << endl;
+	cout << "Manufacturer: " << manufacturer << "\n" << "Year Built: " << year;
 }
 
 //															CONSTRUCTORS

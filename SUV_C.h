@@ -12,10 +12,10 @@ private:
 	int gasCapacity;
 public:
 	SUV_C();
-	SUV_C(int);
+	SUV_C(int, string, int, int);
 	void Set_Gas_Capacity(int);
 	int Get_Gas_Capacity() const;
-	void Display_Info();
+	virtual void Display_Info() const;
 };
 
 #endif 
