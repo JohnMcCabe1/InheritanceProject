@@ -12,10 +12,12 @@ private:
 	string manufacturer;
 public:
 	Vehicle_C();
-	void setYear(int newYear);
-	int getYear() const;
-	void setManufacturer(string newManufacturer);
-	string getManufacturer() const;
+	Vehicle_C(string, int);
+	void Set_Year(int newYear);
+	int Get_Year() const;
+	void Set_Manufacturer(string newManufacturer);
+	string Get_Manufacturer() const;
+	void Display_Info();
 	
 };
 
